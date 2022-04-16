@@ -1,10 +1,10 @@
 @import "./variables", "./color";
-
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 .general {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: $bg-light;
+  font-family: Raleway, sans-serif;
+  background-color: $bg-general;
   nav.navbar {
-    background-color: rgba(84, 8, 160, 0.1) !important;
+    background-color: rgba(116, 52, 180, 0.1) !important;
     height: 80px !important;
     .container {
       .navbar-brand {
@@ -26,13 +26,18 @@
       }
       .collapse.show {
         padding: 25px;
-        background-color: rgb(150, 90, 210);
+        background-color: $bg-primary;
         border-radius: 0.25rem;
       }
       .navbar-nav.profile {
         .nav-item {
           .nav-link.user {
-            color: blue;
+            color: #000080;
+          }
+        }
+        .nav-item.logout {
+          a {
+            color: rgb(184, 32, 32);
           }
         }
       }
@@ -42,81 +47,82 @@
     background-color: rgb(150, 90, 210) !important;
   }
 
-  .hellopic {
-    img {
-      width: 100%;
-      max-width: 100vw;
-      height: 100%;
-      max-height: 100vh;
-    }
-  }
-
   .mainContent.homepage {
-    background-color: rgba(201, 38, 201, 1);
-    h1 {
-      color: $light-text;
-    }
-    .crossed {
-      margin: 0 auto;
-      .crosscontent {
-        display: flex;
-        // background-color: salmon;
-
-        .crossimg {
-          width: 50%;
-          img {
-            max-width: 400px;
-            width: 100%;
-            max-height: 400px;
-            height: 100%;
-            margin-left: auto;
-            margin-right: 0;
-          }
-        }
-        .crosstext {
-          width: 50%;
-          // background-color: aqua;
-          .bloghl {
-            // background-color: $bg-secondary;
-            width: 100%;
-            max-width: 400px;
-            height: 100%;
-            p.maintext {
-              max-height: 240px;
-              // white-space: nowrap;
-              // text-overflow: ellipsis;
-              overflow: hidden;
-              margin-bottom: 0px;
-            }
-            a {
-              text-decoration: none;
-              color: $text;
-            }
-            a:hover {
-              color: white;
-            }
-          }
-        }
+    .hellopic {
+      img {
+        width: 100%;
+        max-width: 100vw;
+        height: 100%;
+        max-height: 100vh;
       }
-      .crosscontent:nth-of-type(even) {
-        display: flex;
-        flex-direction: row-reverse;
-        .crossimg {
-          img {
-            margin-left: 0;
-            margin-right: auto;
+    }
+    .section-one {
+      background-color: $bg-secondary;
+      h1 {
+        color: $text;
+      }
+      .crossed {
+        margin: 0 auto;
+        .crosscontent {
+          display: flex;
+          // background-color: salmon;
+
+          .crossimg {
+            width: 50%;
+            img {
+              max-width: 400px;
+              width: 100%;
+              max-height: 400px;
+              height: 100%;
+              margin-left: auto;
+              margin-right: 0;
+            }
+          }
+          .crosstext {
+            width: 50%;
+            // background-color: aqua;
+            .bloghl {
+              // background-color: $bg-secondary;
+              width: 100%;
+              max-width: 400px;
+              height: 100%;
+              p.maintext {
+                max-height: 240px;
+                // white-space: nowrap;
+                // text-overflow: ellipsis;
+                overflow: hidden;
+                margin-bottom: 0px;
+              }
+              a {
+                text-decoration: none;
+                color: $text;
+              }
+              a:hover {
+                color: white;
+              }
+            }
           }
         }
-        .crosstext {
-          .bloghl {
-            text-align: right;
-            margin-left: auto;
-            margin-right: 0;
-            div.author {
-              justify-content: flex-end;
+        .crosscontent:nth-of-type(even) {
+          display: flex;
+          flex-direction: row-reverse;
+          .crossimg {
+            img {
+              margin-left: 0;
+              margin-right: auto;
             }
-            .toptext {
+          }
+          .crosstext {
+            .bloghl {
               text-align: right;
+              margin-left: auto;
+              margin-right: 0;
+              div.author {
+                justify-content: flex-end;
+              }
+              .toptext {
+                text-align: right;
+              }
             }
           }
         }
@@ -124,7 +130,9 @@
     }
   }
   .mainContent.artikel {
-    background-color: rgba(201, 38, 201, 0.5);
+    background-color: $bg-secondary;
+    padding-top: 100px;
+    padding-bottom: 50px;
     .imgcontent {
       display: flex;
       justify-content: center;
@@ -137,10 +145,18 @@
       .author {
         display: flex;
         font-size: 13px;
+        align-items: center;
         .edit {
+          margin-top: -17px;
           margin-left: 20px;
+          background-color: $bg-tertiary;
+          height: 20px;
+          border-radius: 3px;
           a {
-            color: cornflowerblue;
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            line-height: 3px;
           }
         }
       }
@@ -168,6 +184,69 @@
         li.subbutton {
           button {
             margin: 0 auto !important;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    div {
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+}
+.general.login {
+  background: linear-gradient(90deg, #c7c5f4, #776bcc);
+  .container-fluid {
+    margin-top: 50px;
+    .card {
+      width: 80%;
+      max-width: 350px;
+      form {
+        border-radius: 15px;
+        border: 1px solid $bg-primary;
+        input {
+          border: none;
+          border-bottom: 2px solid #d1d1d4;
+        }
+        input:active,
+        input:hover,
+        input:focus {
+          outline: none;
+          border-bottom-color: #6a679e;
+        }
+        img {
+          margin-top: 70px;
+        }
+        .username {
+          margin-top: 100px;
+        }
+        .checkbox {
+          label {
+            margin-top: 25px;
+            font-size: 12px;
+          }
+        }
+        .d-grid {
+          button {
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 100px;
+            height: 40px;
+            transition: all 0.5s ease;
+            border-radius: 23px;
+            border: 2px solid #d1d1d4;
+            transition-delay: 0.2s;
+          }
+          button:hover {
+            box-shadow: 0 0 20px $bg-primary, 0 0 40px $bg-secondary;
+            border: 2px solid $bg-tertiary;
+            background-color: $bg-tertiary;
+            color: white;
+            transition: box-shadow 1s, border 2s, background-color 2s, color 2s;
           }
         }
       }

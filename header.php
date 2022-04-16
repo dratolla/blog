@@ -74,8 +74,8 @@ if( isset($_POST["cari"]) ) {
                     <li class="nav-item">
                         <a class="nav-link user" href="profil.php?id=<?= $_SESSION['username']?>"><?= $_SESSION['username']?></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-danger" href="logout.php">Logout</a>
+                    <li class="nav-item logout">
+                        <a class="nav-link" href="logout.php">Logout</a>
                     </li>
                         
                     </li>

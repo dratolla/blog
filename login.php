@@ -81,33 +81,41 @@ if( isset($_POST["login"]) ) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="assets/scss/theme.css" rel="stylesheet">
 </head>
-<body class="general">
+<body class="general login">
        <!-- Header Section -->
     
-    <div class="container-fluid login w-25 mt-5 p-0" id="container-fluid">
-        <div class="card text-center rounded">
-            <form action="" method="post" id="form-login" class="bg-white border rounded  rounded-3 p-2">
+    <div class="container-fluid d-flex justify-content-center p-0" id="container-fluid">
+        <div class="card text-center bg-transparent border-0">
+            <form action="" method="post" id="form-login" class="bg-white">
                 
-                <img src="assets/img/logo.png" alt="Brian D" class="mb-2 mt-3">
-                <h1 class="h3 mt-3 mb-5 font-weight-normal text-dark fs-1 font-monospace">Halaman Login</h1>
+                <img src="assets/img/logo.png" alt="Brian D">
 
                 <?php if( isset($error) ) :?>
                     <div class="alert alert-warning text-danger">Username atau password salah</div>
                 <?php endif; ?>
 
-                        <label for="username" class="visually-hidden">Username</label>
-                        <input type="text" name="username" id="username" class="form-control rounded-0 rounded-top" placeholder="Username" autofocus autocomplete="off" required>
+                        <div class="username">
+                            <label for="username" class="visually-hidden">
+                                Username
+                            </label>
+                            <span class="iconify" data-icon="carbon:user-avatar-filled" style="color: #877dd4;" data-width="25" data-height="25"></span> 
+                            <input type="text" name="username" id="username" class="rounded-0" placeholder="Username" autofocus autocomplete="off" required>
 
-                        <label for="password" class="visually-hidden">Password :</label>
-                        <input type="password" name="password" id="password" class="form-control rounded-0 rounded-bottom" placeholder="Password">
+                       </div>
 
-                        <div class="checkbox mt-3">
+                        <div class="password mt-4 mb-2">
+                            <label for="password" class="visually-hidden">Password :</label>
+                            <span class="iconify" data-icon="fa6-solid:lock" style="color: #877dd4;" data-width="20" data-height="20"></span>
+                            <input type="password" name="password" id="password" class="rounded-0" placeholder="Password">
+                        </div>
+
+                        <div class="checkbox">
                             <input type="checkbox" name="remember" id="remember">
                             <label for="remember" class="">Remember me</label>
                         </div>
 
-                        <div class="d-grid mt-3 col-3 m-auto">
-                        <button type="submit" name="login" class="btn btn-sm btn-outline-primary">Login</button>
+                        <div class="d-grid">
+                            <button type="submit" name="login" class="btn">Login</button>
                         </div>
 
                     <!-- <p class="mt-5 ">Untuk informasi lebih lanjut, hubungi kami </p>
@@ -127,7 +135,7 @@ if( isset($_POST["login"]) ) {
                         </svg> Whatsapp
                     </a> -->
 
-                    <p class="mt-3 ">&copy;Copyright by Brian Dratolla<p>
+                    <p class="pb-2">&copy; 2022 by Brian Dratolla<p>
 
             </form>
             

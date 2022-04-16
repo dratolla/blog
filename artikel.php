@@ -18,7 +18,7 @@ $artikel = query("SELECT artikel.nama AS an, artikel.konten AS ak, artikel.gamba
             <?php 
             if ($_SESSION["username"] == $artikel['uu']) :
             ?>   
-            <p class="edit">Edit artikel <a href="editartikel.php?id=<?= $artikel["ai"]?>">disini</a></p>
+            <div class="edit"><a href="editartikel.php?id=<?= $artikel["ai"]?>" class="btn">Edit artikel</a></div>
             <?php
             endif;
             ?>
