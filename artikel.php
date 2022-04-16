@@ -27,7 +27,7 @@ $artikel = query("SELECT artikel.nama AS an, artikel.konten AS ak, artikel.gamba
         
     </div>
     <div class="textcontent mx-3">
-        <p class="maintext"><?= $artikel["ak"];?></p>
+        <p class="maintext"><?= stripslashes(nl2br($artikel["ak"]))?></p>
 
         
             </div>

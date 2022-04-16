@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
         <?php endif; ?>
         <ul>
             <li class="mb-2">
-                <label class="visually-hidden" for="nama" >Nama Artikel</label>
+                <label class="visually-hidden text-light" for="nama" >Nama Artikel</label>
                 <input type="text" name="nama" class="form-control bg-dark text-light rounded" id="nama" placehorder="Title Artikel" required value="<?= $artikel['an']; ?>">
             </li>
             <li class="mb-2">
@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
                 <input type="text" disabled name="username" class="form-control bg-dark text-light rounded" id="username" placehorder="Username" required value="<?= $artikel['uu']; ?>">
             </li>
             <li class="mb-2">
-                <label class="visually-hidden" for="konten" >Isi Konten</label>
+                <label class="visually-hidden text-light" for="konten" >Isi Konten</label>
                 <textarea class="form-control bg-dark text-light" name="konten" id="konten" cols="30" rows="20" placehorder="Isi Artikel" required value=""><?= $artikel['ak'];?></textarea>
             </li>
             <li class="mb-3">
