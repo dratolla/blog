@@ -5,11 +5,11 @@
   background-color: $bg-general;
   nav.navbar {
     background-color: rgba(116, 52, 180, 0.1) !important;
-    height: 80px !important;
     .container {
       .navbar-brand {
         img.nav-logo {
-          width: 150px;
+          width: 120px;
+          display: inline-block;
         }
       }
       .collapse {
@@ -189,6 +189,85 @@
       }
     }
   }
+  .mainContent.registration {
+    display: flex;
+    justify-content: center;
+    .card {
+      width: 80%;
+      max-width: 350px;
+      margin-top: 100px;
+      border: 0px;
+      background-color: transparent;
+      form {
+        border-radius: 15px;
+        padding: 10px;
+        border: 1px solid $bg-primary;
+        background-color: white;
+        ul {
+          li {
+            list-style: none;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            input {
+              border: none;
+              border-bottom: 2px solid #d1d1d4;
+              width: 230px;
+            }
+            input:active,
+            input:hover,
+            input:focus {
+              outline: none;
+              border-bottom-color: #6a679e;
+            }
+
+            img {
+              margin-top: 20px;
+              width: 200px;
+            }
+          }
+          .d-grid {
+            width: 260px;
+            button {
+              margin: 0 auto;
+              width: 100px;
+              height: 40px;
+              transition: all 0.5s ease;
+              border-radius: 23px;
+              border: 2px solid #d1d1d4;
+              transition-delay: 0.2s;
+            }
+            button:hover {
+              box-shadow: 0 0 20px $bg-primary, 0 0 40px $bg-secondary;
+              border: 2px solid $bg-tertiary;
+              background-color: $bg-tertiary;
+              color: white;
+              transition: box-shadow 0.5s, border 1s, background-color 1s, color 1s;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mainContent.about {
+    .container.section-one,
+    .container.section-two {
+      background-color: $bg-secondary;
+      padding-top: 100px;
+      text-align: left;
+      p.title {
+        font-size: 30px;
+        text-align: center;
+      }
+      p.text {
+        text-indent: 30px;
+      }
+    }
+    .container.section-two {
+      margin-top: -16px;
+    }
+  }
+
   footer {
     div {
       img {
@@ -218,10 +297,11 @@
           border-bottom-color: #6a679e;
         }
         img {
-          margin-top: 70px;
+          margin-top: 20px;
+          width: 200px;
         }
         .username {
-          margin-top: 100px;
+          margin-top: 0px;
         }
         .checkbox {
           label {
@@ -246,7 +326,7 @@
             border: 2px solid $bg-tertiary;
             background-color: $bg-tertiary;
             color: white;
-            transition: box-shadow 1s, border 2s, background-color 2s, color 2s;
+            transition: box-shadow 0.5s, border 1s, background-color 1s, color 1s;
           }
         }
       }

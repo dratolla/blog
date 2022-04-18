@@ -1,5 +1,5 @@
 
-  <footer class="d-flex flex-wrap justify-content-between align-items-center sticky-footer bg-white px-5">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center mt-auto sticky-bottom bg-white px-5">
     <div class="col-md-4 d-flex align-items-center">
       <img src="assets/img/ac-logo.png" alt="BD logo" class="imgfooter">
       <span class="text-muted ms-3">© 2021 Brian Dratolla</span>

@@ -6,11 +6,11 @@
 
 .general nav.navbar {
   background-color: rgba(116, 52, 180, 0.1) !important;
-  height: 80px !important;
 }
 
 .general nav.navbar .container .navbar-brand img.nav-logo {
-  width: 150px;
+  width: 120px;
+  display: inline-block;
 }
 
 .general nav.navbar .container .collapse .navbar-nav .nav-item .nav-link {
@@ -205,6 +205,104 @@
   margin: 0 auto !important;
 }
 
+.general .mainContent.registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.general .mainContent.registration .card {
+  width: 80%;
+  max-width: 350px;
+  margin-top: 100px;
+  border: 0px;
+  background-color: transparent;
+}
+
+.general .mainContent.registration .card form {
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid #877dd4;
+  background-color: white;
+}
+
+.general .mainContent.registration .card form ul li {
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.general .mainContent.registration .card form ul li input {
+  border: none;
+  border-bottom: 2px solid #d1d1d4;
+  width: 230px;
+}
+
+.general .mainContent.registration .card form ul li input:active,
+.general .mainContent.registration .card form ul li input:hover,
+.general .mainContent.registration .card form ul li input:focus {
+  outline: none;
+  border-bottom-color: #6a679e;
+}
+
+.general .mainContent.registration .card form ul li img {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.general .mainContent.registration .card form ul .d-grid {
+  width: 260px;
+}
+
+.general .mainContent.registration .card form ul .d-grid button {
+  margin: 0 auto;
+  width: 100px;
+  height: 40px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 23px;
+  border: 2px solid #d1d1d4;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.general .mainContent.registration .card form ul .d-grid button:hover {
+  -webkit-box-shadow: 0 0 20px #877dd4, 0 0 40px #b6b2ec;
+          box-shadow: 0 0 20px #877dd4, 0 0 40px #b6b2ec;
+  border: 2px solid #6661a0;
+  background-color: #6661a0;
+  color: white;
+  -webkit-transition: border 1s, background-color 1s, color 1s, -webkit-box-shadow 0.5s;
+  transition: border 1s, background-color 1s, color 1s, -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s, border 1s, background-color 1s, color 1s;
+  transition: box-shadow 0.5s, border 1s, background-color 1s, color 1s, -webkit-box-shadow 0.5s;
+}
+
+.general .mainContent.about .container.section-one,
+.general .mainContent.about .container.section-two {
+  background-color: #b6b2ec;
+  padding-top: 100px;
+  text-align: left;
+}
+
+.general .mainContent.about .container.section-one p.title,
+.general .mainContent.about .container.section-two p.title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.general .mainContent.about .container.section-one p.text,
+.general .mainContent.about .container.section-two p.text {
+  text-indent: 30px;
+}
+
+.general .mainContent.about .container.section-two {
+  margin-top: -16px;
+}
+
 .general footer div img {
   max-width: 100px;
 }
@@ -241,11 +339,12 @@
 }
 
 .general.login .container-fluid .card form img {
-  margin-top: 70px;
+  margin-top: 20px;
+  width: 200px;
 }
 
 .general.login .container-fluid .card form .username {
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 .general.login .container-fluid .card form .checkbox label {
@@ -273,9 +372,9 @@
   border: 2px solid #6661a0;
   background-color: #6661a0;
   color: white;
-  -webkit-transition: border 2s, background-color 2s, color 2s, -webkit-box-shadow 1s;
-  transition: border 2s, background-color 2s, color 2s, -webkit-box-shadow 1s;
-  transition: box-shadow 1s, border 2s, background-color 2s, color 2s;
-  transition: box-shadow 1s, border 2s, background-color 2s, color 2s, -webkit-box-shadow 1s;
+  -webkit-transition: border 1s, background-color 1s, color 1s, -webkit-box-shadow 0.5s;
+  transition: border 1s, background-color 1s, color 1s, -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s, border 1s, background-color 1s, color 1s;
+  transition: box-shadow 0.5s, border 1s, background-color 1s, color 1s, -webkit-box-shadow 0.5s;
 }
 /*# sourceMappingURL=theme.css.map */

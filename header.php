@@ -45,7 +45,7 @@ if( isset($_POST["cari"]) ) {
 <body class="general">
        <!-- Header Section -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container mt-0">
+        <div class="container">
             <a class="navbar-brand" href="index.php">
                 <img src="assets/img/logo.png" alt="Adam Fitriyan Logo" class="nav-logo">
             </a>
