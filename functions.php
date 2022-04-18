@@ -2,6 +2,11 @@
 
 $conn = mysqli_connect("localhost","root","","db_blog");
 
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+ }
+
 function query($query) {
     global $conn;
     $result = mysqli_query($conn, $query);
